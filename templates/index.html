@@ -774,7 +774,6 @@ body::before {
               <th>RECALL</th>
               <th>F1-SCORE</th>
               <th>AUC-ROC</th>
-              <th>H1 (≥0.70)</th>
             </tr>
           </thead>
           <tbody id="perf-table-body">
@@ -968,7 +967,6 @@ function buildAnalytics(d) {
       <td>${r.recall.toFixed(3)}</td>
       <td>${r.f1.toFixed(3)}</td>
       <td><strong>${r.auc_roc.toFixed(3)}</strong></td>
-      <td><span class="pill ${met?'pill-green':'pill-red'}">${met?'MET':'NOT MET'}</span></td>
     `;
     tbody.appendChild(tr);
   });
